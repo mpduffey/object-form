@@ -1,0 +1,8 @@
+		<button class="btn btn-mini" (click)="print(object)">Print</button>
+		<p *ngFor="#key of arrayOfKeys">{{key}}: 
+			<div class="float-right">
+				<input type="text" [(ngModel)]="object[key]"/>
+				<i class="fa fa-times fa-lg red-text pointer block-icon" aria-hidden="true"></i>
+			</div>
+		</p>
+		<p><input type="text" #newKey/>:  <input type="text" #newValue/><i class="fa fa-plus" (click)="addProperty(newKey, newValue)"></i></p>
