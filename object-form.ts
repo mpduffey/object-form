@@ -1,5 +1,5 @@
 import {Component, Input, ChangeDetectionStrategy, AfterContentInit} from '@angular/core';
-import {ObjectService} from 'services/objects.service';
+import {ObjectService} from 'services/object-service/objects.service';
 
 @Component({
 	selector:					'object-form',
